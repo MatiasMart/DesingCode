@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        blurView.layer.shadowOpacity = 0.2
+
+
     }
 
+    
+    
 
 }
 

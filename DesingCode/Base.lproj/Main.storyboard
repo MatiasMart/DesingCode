@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,20 +15,158 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86L-ZM-CWR">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="xpd-6K-uLj">
+                                        <rect key="frame" x="0.0" y="-155" width="393" height="464.66666666666669"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVm-b4-ejP" customClass="CustomView" customModule="DesingCode" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="20" width="361" height="350"/>
+                                        <subviews>
+                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-ct-3vo" customClass="CustomBlurView" customModule="DesingCode" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="350"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Msk-7z-7tU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="350"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="Cko-0y-5g1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="217"/>
+                                                        </imageView>
+                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTi-WK-qAe">
+                                                            <rect key="frame" x="0.0" y="217" width="361" height="133"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3vQ-Rb-Uro">
+                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="133"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift UI for iOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2R-dd-jZs">
+                                                                        <rect key="frame" x="20" y="8" width="321" height="34"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Sections - 3 HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuz-b5-J6Q">
+                                                                        <rect key="frame" x="20" y="50" width="321" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build an iOS app for iOS 15 with custom layouts, animations and ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji1-V8-Qbb">
+                                                                        <rect key="frame" x="20" y="78" width="321" height="31.333333333333329"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="I2R-dd-jZs" firstAttribute="leading" secondItem="3vQ-Rb-Uro" secondAttribute="leading" constant="20" id="9j0-qX-lTv"/>
+                                                                    <constraint firstItem="zuz-b5-J6Q" firstAttribute="top" secondItem="I2R-dd-jZs" secondAttribute="bottom" constant="8" id="HQP-Wk-Nwz"/>
+                                                                    <constraint firstItem="ji1-V8-Qbb" firstAttribute="top" secondItem="zuz-b5-J6Q" secondAttribute="bottom" constant="8" id="JDF-pX-VYo"/>
+                                                                    <constraint firstItem="ji1-V8-Qbb" firstAttribute="leading" secondItem="3vQ-Rb-Uro" secondAttribute="leading" constant="20" id="Nl2-bG-ntC"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ji1-V8-Qbb" secondAttribute="trailing" constant="20" id="Ygr-lu-xen"/>
+                                                                    <constraint firstItem="zuz-b5-J6Q" firstAttribute="leading" secondItem="3vQ-Rb-Uro" secondAttribute="leading" constant="20" id="bcJ-5F-7fo"/>
+                                                                    <constraint firstItem="I2R-dd-jZs" firstAttribute="top" secondItem="3vQ-Rb-Uro" secondAttribute="top" constant="8" id="eLO-G0-gzg"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="I2R-dd-jZs" secondAttribute="trailing" constant="20" id="kyi-TM-6fo"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="zuz-b5-J6Q" secondAttribute="trailing" constant="20" id="qeR-da-gdL"/>
+                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ji1-V8-Qbb" secondAttribute="bottom" constant="16" id="rq0-4c-cSG"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <vibrancyEffect>
+                                                                <blurEffect style="systemMaterial"/>
+                                                            </vibrancyEffect>
+                                                        </visualEffectView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="sTi-WK-qAe" secondAttribute="bottom" id="GcU-7w-wBk"/>
+                                                        <constraint firstItem="Cko-0y-5g1" firstAttribute="leading" secondItem="Msk-7z-7tU" secondAttribute="leading" id="HMA-uI-9ZJ"/>
+                                                        <constraint firstItem="sTi-WK-qAe" firstAttribute="top" secondItem="Cko-0y-5g1" secondAttribute="bottom" id="NGL-Uq-QdH"/>
+                                                        <constraint firstItem="sTi-WK-qAe" firstAttribute="leading" secondItem="Msk-7z-7tU" secondAttribute="leading" id="RdG-xI-8K9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sTi-WK-qAe" secondAttribute="bottom" id="ev8-FX-BJg"/>
+                                                        <constraint firstItem="Cko-0y-5g1" firstAttribute="top" secondItem="Msk-7z-7tU" secondAttribute="top" id="g1c-qU-seu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sTi-WK-qAe" secondAttribute="trailing" id="imL-yz-1Ak"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Cko-0y-5g1" secondAttribute="trailing" id="jMq-mi-tuq"/>
+                                                    </constraints>
+                                                </view>
+                                                <blurEffect style="regular"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </visualEffectView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BlurBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="gzu-ct-3vo" firstAttribute="top" secondItem="AVm-b4-ejP" secondAttribute="top" id="8Dd-YH-xm9"/>
+                                            <constraint firstItem="gzu-ct-3vo" firstAttribute="leading" secondItem="AVm-b4-ejP" secondAttribute="leading" id="FtD-IO-LkD"/>
+                                            <constraint firstAttribute="height" constant="350" id="ZZL-mw-ho2"/>
+                                            <constraint firstAttribute="bottom" secondItem="gzu-ct-3vo" secondAttribute="bottom" id="d9X-JO-Mrm"/>
+                                            <constraint firstAttribute="trailing" secondItem="gzu-ct-3vo" secondAttribute="trailing" id="oto-zx-3Zi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Shadow"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffset">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AVm-b4-ejP" firstAttribute="leading" secondItem="05y-Dz-vTE" secondAttribute="leading" constant="16" id="8Hq-D8-j8S"/>
+                                    <constraint firstItem="05y-Dz-vTE" firstAttribute="trailing" secondItem="AVm-b4-ejP" secondAttribute="trailing" constant="16" id="Chh-8M-60p"/>
+                                    <constraint firstItem="AVm-b4-ejP" firstAttribute="top" secondItem="Xl2-aR-J2T" secondAttribute="top" constant="20" id="gds-hc-GKF"/>
+                                    <constraint firstItem="xpd-6K-uLj" firstAttribute="top" secondItem="05y-Dz-vTE" secondAttribute="top" id="hrh-SX-c5c"/>
+                                    <constraint firstItem="05y-Dz-vTE" firstAttribute="trailing" secondItem="xpd-6K-uLj" secondAttribute="trailing" id="ien-Af-4qH"/>
+                                    <constraint firstItem="xpd-6K-uLj" firstAttribute="leading" secondItem="05y-Dz-vTE" secondAttribute="leading" id="uzd-Fn-0nj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Xl2-aR-J2T"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="05y-Dz-vTE"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
+                        <constraints>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1cy-ph-Zu0"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5el-Zy-mKf"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="RZm-Pz-oxY"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W0l-c5-YL3"/>
+                            <constraint firstAttribute="bottom" secondItem="86L-ZM-CWR" secondAttribute="bottom" id="cmK-ZV-Yww"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lP7-h4-gg8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="aHf-Yp-PtF"/>
+                    <connections>
+                        <outlet property="blurView" destination="gzu-ct-3vo" id="lBf-7N-zhn"/>
+                        <outlet property="cardView" destination="AVm-b4-ejP" id="7M0-b5-ApM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918" y="-321"/>
+            <point key="canvasLocation" x="1006.8702290076335" y="-732.3943661971831"/>
         </scene>
-        <!--Item-->
+        <!--Learn Now-->
         <scene sceneID="V8l-wr-fnq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z9z-jE-tqk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="N32-a9-Bhy"/>
+                    <tabBarItem key="tabBarItem" title="Learn Now" image="house.fill" catalog="system" id="N32-a9-Bhy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="IA6-ta-MpW">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -42,7 +180,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdr-xh-luN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="-321"/>
+            <point key="canvasLocation" x="366" y="-732"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Iq8-M6-Ej6">
@@ -50,18 +188,24 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Jdg-Nz-uws" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="13h-Cc-nTM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <tabBarAppearance key="standardAppearance" backgroundEffect="systemUltraThinMaterial"/>
                     </tabBar>
                     <connections>
                         <segue destination="z9z-jE-tqk" kind="relationship" relationship="viewControllers" id="IlM-1I-b0B"/>
+                        <segue destination="o16-gw-kbj" kind="relationship" relationship="viewControllers" id="w9A-7S-Gdg"/>
+                        <segue destination="Kug-4i-647" kind="relationship" relationship="viewControllers" id="zMd-Iv-eVA"/>
+                        <segue destination="zsW-wU-2RP" kind="relationship" relationship="viewControllers" id="Cfu-eW-nA5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4DE-hQ-N5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-404" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore-->
         <scene sceneID="968-Bi-iGr">
             <objects>
                 <viewController id="o16-gw-kbj" sceneMemberID="viewController">
@@ -69,14 +213,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FPO-tO-L95"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="upP-iU-6tb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmp-Z7-4hM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="364"/>
+            <point key="canvasLocation" x="1007" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Notifications-->
         <scene sceneID="hK8-B5-d5W">
             <objects>
                 <viewController id="Kug-4i-647" sceneMemberID="viewController">
@@ -84,14 +229,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="GWn-oA-E7p"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.fill" catalog="system" id="VC8-rC-6Ws"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQo-Zd-VgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="1056"/>
+            <point key="canvasLocation" x="1007" y="634"/>
         </scene>
-        <!--View Controller-->
+        <!--Library-->
         <scene sceneID="R5p-qL-1HO">
             <objects>
                 <viewController id="zsW-wU-2RP" sceneMemberID="viewController">
@@ -99,17 +245,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Fq3-uA-l1Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Library" image="rectangle.stack.fill.badge.plus" catalog="system" id="iEc-sh-FgP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf5-O3-cAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="1760"/>
+            <point key="canvasLocation" x="1007" y="1288"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Background01" width="330" height="464.5"/>
+        <image name="Illustration 2" width="310" height="217"/>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="rectangle.stack.fill.badge.plus" catalog="system" width="128" height="117"/>
+        <namedColor name="AccentColor">
+            <color red="0.3843137254901961" green="0.20392156862745098" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BlurBackground">
+            <color red="1" green="1" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryBackground">
+            <color red="0.94901960784313721" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Shadow">
+            <color red="0.27099999785423279" green="0.16500000655651093" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
