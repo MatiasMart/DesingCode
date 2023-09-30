@@ -183,7 +183,7 @@
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XkI-wI-JL4">
                                                                         <rect key="frame" x="0.0" y="8" width="160" height="131"/>
                                                                     </imageView>
-                                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-nR-U6X">
+                                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-m3-JJx">
                                                                         <rect key="frame" x="5" y="126" width="150" height="4"/>
                                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </progressView>
@@ -199,18 +199,18 @@
                                                                     </visualEffectView>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="bottom" secondItem="Vav-LH-VRG" secondAttribute="bottom" id="5KF-8t-ODl"/>
-                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="top" secondItem="Y4H-fW-FRO" secondAttribute="top" id="Jzd-Zq-l2j"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Pxa-m3-JJx" secondAttribute="trailing" constant="16" id="2dc-ML-2Nz"/>
+                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pxa-m3-JJx" secondAttribute="bottom" constant="16" id="FXf-dh-sR6"/>
+                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="top" secondItem="Y4H-fW-FRO" secondAttribute="top" id="JoS-fL-lfN"/>
                                                                     <constraint firstItem="XkI-wI-JL4" firstAttribute="top" secondItem="H7j-PU-JNv" secondAttribute="top" id="KBQ-m5-GfV"/>
-                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="leading" secondItem="Y4H-fW-FRO" secondAttribute="leading" id="N2x-JV-FYg"/>
+                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="leading" secondItem="XkI-wI-JL4" secondAttribute="leading" id="KKg-fs-dgl"/>
                                                                     <constraint firstItem="H7j-PU-JNv" firstAttribute="leading" secondItem="Y4H-fW-FRO" secondAttribute="leading" constant="16" id="Ras-6h-Brf"/>
-                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xV9-nR-U6X" secondAttribute="bottom" constant="16" id="gRF-zs-16s"/>
+                                                                    <constraint firstItem="Pxa-m3-JJx" firstAttribute="leading" secondItem="Y4H-fW-FRO" secondAttribute="leading" constant="16" id="WPX-ng-Qi6"/>
+                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="centerY" secondItem="Y4H-fW-FRO" secondAttribute="centerY" id="d1y-sl-hzE"/>
                                                                     <constraint firstAttribute="trailing" secondItem="H7j-PU-JNv" secondAttribute="trailing" constant="16" id="hF2-yu-3eg"/>
                                                                     <constraint firstItem="H7j-PU-JNv" firstAttribute="top" secondItem="Y4H-fW-FRO" secondAttribute="top" constant="16" id="hak-iZ-Ikj"/>
                                                                     <constraint firstItem="XkI-wI-JL4" firstAttribute="bottom" secondItem="H7j-PU-JNv" secondAttribute="bottom" id="hlZ-C1-8BL"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="xV9-nR-U6X" secondAttribute="trailing" constant="16" id="iUS-MZ-xHf"/>
-                                                                    <constraint firstItem="xV9-nR-U6X" firstAttribute="leading" secondItem="Y4H-fW-FRO" secondAttribute="leading" constant="16" id="kg3-a5-tOP"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="Vav-LH-VRG" secondAttribute="trailing" id="soR-Fa-PIJ"/>
+                                                                    <constraint firstItem="Vav-LH-VRG" firstAttribute="trailing" secondItem="XkI-wI-JL4" secondAttribute="trailing" id="tSK-vR-Bjc"/>
                                                                     <constraint firstItem="XkI-wI-JL4" firstAttribute="leading" secondItem="Y4H-fW-FRO" secondAttribute="leading" id="wYq-0q-Gte"/>
                                                                     <constraint firstAttribute="trailing" secondItem="XkI-wI-JL4" secondAttribute="trailing" id="weP-vw-wHj"/>
                                                                 </constraints>
