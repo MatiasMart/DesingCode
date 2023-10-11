@@ -15,9 +15,9 @@ class Course {
     var courseBanner: UIImage
     var courseAuthor: [String]?
     var courseGradient: [CGColor]?
-    var courseBAckground: UIImage?
+    var courseBackground: UIImage?
     
-    init(courseTitle: String!, courseSubtitle: String!, courseDecription: String!, courseIcon: UIImage!, courseBanner: UIImage!, courseAuthor: [String]? = nil, courseGradient: [CGColor]? = nil, courseBAckground: UIImage? = nil) {
+    init(courseTitle: String!, courseSubtitle: String!, courseDecription: String!, courseIcon: UIImage!, courseBanner: UIImage!, courseAuthor: [String]? = nil, courseGradient: [CGColor]? = nil, courseBackground: UIImage? = nil) {
         self.courseTitle = courseTitle
         self.courseSubtitle = courseSubtitle
         self.courseDecription = courseDecription
@@ -25,7 +25,7 @@ class Course {
         self.courseBanner = courseBanner
         self.courseAuthor = courseAuthor
         self.courseGradient = courseGradient
-        self.courseBAckground = courseBAckground
+        self.courseBackground = courseBackground
     }
 }
 
@@ -43,3 +43,11 @@ let handbooks = [
             ])
 ]
 
+let courses = [
+Course(courseTitle: "SwiftUI Concurrency", courseSubtitle: "NEW VIDEO", courseDecription: "Build an iOS app for iOS 15 with custom layouts, animations and more!", courseIcon: UIImage(named: "Logo SwiftUI")!, courseBanner: UIImage(named:
+"Illustration 4")!, courseAuthor: ["Meng To"],courseBackground: UIImage(named: "Background 3")),
+Course(courseTitle: "Flutter for Designers", courseSubtitle: "20 sections - 3 hours", courseDecription: "Build a Flutter app for iOS and Android with custom layouts, animations and more!", courseIcon: UIImage(named: "Logo Flutter")!, courseBanner: UIImage(named: "Illustration 1")!, courseAuthor: ["Sai Kambampati"], courseBackground:
+        UIImage (named: "Background 4" )),
+Course(courseTitle: "React Hooks Advanced", courseSubtitle: "20 sections - 3 hours", courseDecription: "Build a React app with custom layouts, animations and more!", courseIcon: UIImage(named: "Logo React")!, courseBanner: UIImage(named:
+"Illustration 2")!, courseAuthor: ["Meng To"], courseBackground: UIImage(named: "Background 5"))
+]
