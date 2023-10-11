@@ -13,33 +13,33 @@
         <!--Featured-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesingCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="DesingCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86L-ZM-CWR">
-                                <rect key="frame" x="46" y="7" width="393" height="852"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86L-ZM-CWR">
+                                <rect key="frame" x="46" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-Nz-3JJ">
-                                        <rect key="frame" x="0.0" y="-27" width="393" height="464.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="-155" width="393" height="464.66666666666669"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVm-b4-ejP" customClass="CustomView" customModule="DesingCode" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="20" width="361" height="366"/>
+                                        <rect key="frame" x="16" y="20" width="361" height="367"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-ct-3vo" customClass="CustomBlurView" customModule="DesingCode" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="366"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="367"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Msk-7z-7tU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="366"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="367"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="Cko-0y-5g1">
                                                             <rect key="frame" x="0.0" y="0.0" width="361" height="217"/>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTi-WK-qAe">
-                                                            <rect key="frame" x="0.0" y="217" width="361" height="149"/>
+                                                            <rect key="frame" x="0.0" y="217" width="361" height="149.66666666666663"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3vQ-Rb-Uro">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="149"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="149.66666666666663"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift UI for iOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2R-dd-jZs">
@@ -132,13 +132,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECENT HANDBOOK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx8-L2-tFg">
-                                        <rect key="frame" x="16" y="426" width="128.66666666666666" height="15.666666666666686"/>
+                                        <rect key="frame" x="16" y="427" width="128.66666666666666" height="15.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-pJ-HjP">
-                                        <rect key="frame" x="16" y="457.66666666666674" width="361" height="257"/>
+                                        <rect key="frame" x="16" y="458.66666666666674" width="361" height="257"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="257" id="5SY-1S-svT"/>
@@ -265,10 +265,6 @@
                                                                     <constraint firstAttribute="bottom" secondItem="6vI-ql-xdc" secondAttribute="bottom" id="v2r-OU-p2L"/>
                                                                 </constraints>
                                                             </view>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="240" id="IVg-LH-ukn"/>
-                                                                <constraint firstAttribute="height" constant="128" id="XcH-ZU-PL7"/>
-                                                            </constraints>
                                                             <blurEffect style="systemThinMaterial"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -294,6 +290,15 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="160" height="257"/>
+                                                <connections>
+                                                    <outlet property="banner" destination="7FS-hA-FaU" id="MrY-IS-fII"/>
+                                                    <outlet property="descriptionLabel" destination="PmC-Ip-ngG" id="WbS-RE-m86"/>
+                                                    <outlet property="logo" destination="Fem-Ws-cMx" id="YSg-3o-DfW"/>
+                                                    <outlet property="overlay" destination="266-nL-5Xx" id="9Vd-Wa-vGA"/>
+                                                    <outlet property="progressBar" destination="lfG-Bv-qMf" id="P8f-TY-ubr"/>
+                                                    <outlet property="subtitleLabel" destination="Y5f-If-1uC" id="dHt-xB-GAs"/>
+                                                    <outlet property="titleLabel" destination="3WV-47-FC7" id="M2G-pA-N4W"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -322,16 +327,21 @@
                         <constraints>
                             <constraint firstItem="86L-ZM-CWR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1cy-ph-Zu0"/>
                             <constraint firstItem="86L-ZM-CWR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5el-Zy-mKf"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OD9-D2-FwR"/>
                             <constraint firstItem="86L-ZM-CWR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="RZm-Pz-oxY"/>
                             <constraint firstItem="86L-ZM-CWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W0l-c5-YL3"/>
+                            <constraint firstAttribute="bottom" secondItem="86L-ZM-CWR" secondAttribute="bottom" id="XGm-0h-xDx"/>
+                            <constraint firstAttribute="trailing" secondItem="86L-ZM-CWR" secondAttribute="trailing" id="Xhd-iP-1dP"/>
                             <constraint firstAttribute="bottom" secondItem="86L-ZM-CWR" secondAttribute="bottom" id="cmK-ZV-Yww"/>
                             <constraint firstItem="86L-ZM-CWR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lP7-h4-gg8"/>
+                            <constraint firstItem="86L-ZM-CWR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vDp-Ji-vBG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="aHf-Yp-PtF"/>
                     <connections>
                         <outlet property="blurView" destination="gzu-ct-3vo" id="lBf-7N-zhn"/>
                         <outlet property="cardView" destination="AVm-b4-ejP" id="7M0-b5-ApM"/>
+                        <outlet property="handbooksCollectionView" destination="8Ud-pJ-HjP" id="afR-8D-S76"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

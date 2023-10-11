@@ -9,14 +9,23 @@ import UIKit
 
 class HandBookCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var overlay: UIView!
+    @IBOutlet weak var banner: UIImageView!
+    @IBOutlet weak var logo: CustomImageView!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     let gradient = CAGradientLayer()
+    
     
     override public func layoutSubviews() {
         super.layoutSubviews()
         super.layoutIfNeeded()
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         layer.shadowColor = UIColor(named: "Shadow")!.cgColor
         layer.shadowOpacity = 0.25
@@ -31,6 +40,15 @@ class HandBookCollectionViewCell: UICollectionViewCell {
         gradient.frame = overlay.frame
         gradient.cornerCurve = .continuous
         gradient.cornerRadius = 30
+        
+        overlay.layer.insertSublayer(gradient, at: 0)
+        overlay.layer.cornerRadius = 30
+        overlay.layer.cornerCurve = .continuous
+    }
+    
+    
+    override public func prepareForReuse() {
+        super.prepareForReuse()
     }
         
 }
